@@ -11,7 +11,7 @@ button.onclick = function() {
 	temp = "";
   emoji.replace_mode = 'unified';
 emoji.allow_native = true;
-  output.innerHTML = emoji.replace_colons(input.value.replace(/ /g, ' :clap: '));
+  output.innerHTML = emoji.replace_colons(':clap: ' + input.value.replace(/ /g, ' :clap: '));
 	output.innerHTML = output.innerHTML.split("\\").join("");
 	output.select();
 	document.execCommand("copy");
